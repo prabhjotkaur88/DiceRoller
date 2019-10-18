@@ -57,10 +57,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void on_button_click(View view) {
-        TextView tv=  this.findViewById(R.id.numberTextView);
+
+         TextView tv;
+        tv = this.findViewById(R.id.numberTextView);
 
         Random r = new Random();
-        int number = r.nextInt( 10);
+        int number = r.nextInt( 6);
         tv.setText(Integer.toString(number));
 
 
